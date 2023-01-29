@@ -1,0 +1,32 @@
+From 14d06c4452bcbec153fcc24ef3dd93cc96999d97 Mon Sep 17 00:00:00 2001
+From: rajsharma55 <rajmwr5785@gmail.com>
+Date: Tue, 17 Jan 2023 07:00:46 +0000
+Subject: [PATCH 2/2] mithorium-common: missing hal
+
+Signed-off-by: rajsharma55 <rajmwr5785@gmail.com>
+---
+ framework_compatibility_matrix.xml | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/framework_compatibility_matrix.xml b/framework_compatibility_matrix.xml
+index 3668b9a1..996948a4 100644
+--- a/framework_compatibility_matrix.xml
++++ b/framework_compatibility_matrix.xml
+@@ -70,6 +70,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+              <instance>default</instance>
+         </interface>
+     </hal>
++    <hal format="hidl" optional="true">
++	<name>vendor.dolby.hardware.dms</name>
++	<version>2.0</version>
++	<interface>
++	    <name>IDms</name>
++	    <instance>default</instance>
++	</interface>
++    </hal>
+     <hal format="hidl" optional="true">
+         <name>vendor.qti.hardware.display.demura</name>
+         <version>1.0</version>
+-- 
+2.25.1
+
